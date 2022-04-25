@@ -24,6 +24,7 @@ logger = logging.getLogger(__name__)
 
 @method_decorator(csrf_exempt, name='dispatch')
 class User(View):
+
     # add user
     def post(self, request, *args, **kargs):
         try:
