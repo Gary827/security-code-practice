@@ -55,8 +55,7 @@ class User(View):
             res = {
                 "result": "ok"
             }
-            print("666")
-            print("ccc", res)
+            
             return JsonResponse(res, status=200)
         except Exception as e:
             traceback.print_exc()
